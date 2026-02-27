@@ -1,0 +1,73 @@
+.attendance-form {
+  max-width: 720px;
+}
+
+.form-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Status buttons */
+.status-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.status-btn {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.status-btn.present.active {
+  background: #ecfdf5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.status-btn.absent.active {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #7f1d1d;
+}
+
+.status-btn:hover {
+  transform: translateY(-1px);
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Messages */
+.error-message {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.success-message {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}

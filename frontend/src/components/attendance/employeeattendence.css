@@ -1,0 +1,121 @@
+.attendance-list-container {
+  width: 100%;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-input {
+  max-width: 280px;
+}
+
+.date-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+  background: #eef2ff;
+  border-color: #6366f1;
+  color: #3730a3;
+}
+
+.filter-btn.clear {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #7f1d1d;
+}
+
+/* Table */
+.attendance-table-wrapper {
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th {
+  text-align: left;
+  font-size: 0.8rem;
+  color: #6b7280;
+  padding: 0.75rem;
+}
+
+.attendance-table td {
+  padding: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.85rem;
+}
+
+.attendance-table tr:hover {
+  background: #f9fafb;
+}
+
+/* Employee */
+.employee-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mini-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Status */
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-badge.present {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.status-badge.absent {
+  background: #fef2f2;
+  color: #7f1d1d;
+}
+
+.time-cell {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+/* Footer */
+.attendance-summary {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}

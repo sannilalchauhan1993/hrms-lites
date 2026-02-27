@@ -1,0 +1,32 @@
+.employees-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.employees-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.employees-header h1 {
+  font-weight: 700;
+}
+
+.employees-header p {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.employees-list h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.employees-list h2 span {
+  color: var(--text-secondary);
+  font-weight: 400;
+}

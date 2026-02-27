@@ -1,0 +1,87 @@
+.employee-list-container {
+  width: 100%;
+}
+
+/* Search */
+.search-input {
+  max-width: 350px;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid */
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.employee-card {
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.employee-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Avatar */
+.employee-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Info */
+.employee-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.employee-id {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Details */
+.employee-details {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* Delete */
+.delete-btn {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.45rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .search-input {
+    max-width: 100%;
+  }
+}
